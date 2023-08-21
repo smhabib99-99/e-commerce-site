@@ -49,13 +49,14 @@ function common(target){
                 })
                }
             })
+
+            document.getElementById('home').addEventListener('click', function(){
+                totalPrice = 0;
+                discount = 0;
+                price = 0;
+
+                window.location.href = 'http://127.0.0.1:5500/index.html';
+            })
             
-
-
-            // document.getElementById('apply').addEventListener('click', function(){
-            //     const discountElement = document.getElementById('discount');
-            //     discount = (totalPrice * 20)/100;
-            //     price = totalPrice - discount; 
-            //     discountElement.innerText = discount;
 
 }
